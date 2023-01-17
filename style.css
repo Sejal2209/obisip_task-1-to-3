@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: relative;
+    top:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    color:#000;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a{
+    color:#000;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 20px;
+    background: linear-gradient(to bottom , s#fff,#ffff);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition-property: background,color;
+
+}
+
+header nav a:hover{
+
+    background: linear-gradient(to bottom , #fff,#ffff);
+    color:#000;
+}
+.content{
+    max-width: 650px;
+    margin: 60px 150px;
+}
+
+.content .info h2{
+    color:chocolate;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.content .info h2 span{
+    color:chocolate;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content .info p{
+  color:coral;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .banner-btn{
+    margin: 70px auto 0;
+}
+.content .banner-btn a{
+    width:150 px;
+    text-decoration: underline;
+    display: inline-block;
+    margin:0 10 px;
+    padding:12px 0;
+    color:#000;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.content .banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:coral;
+    z-index: -1;
+    z-index: -1;
+    transition: 0.5s;
+}
+.content .banner-btn a:hover span{
+    width:100%;
+}
+.content .banner-btn a:hover{
+    color:#000;
+}
+
+
+
